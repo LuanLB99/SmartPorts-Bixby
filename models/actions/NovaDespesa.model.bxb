@@ -1,0 +1,48 @@
+action (NovaDespesa) {
+  type(Search)
+  description (Postagem de Nova despesa)
+   collect {
+    input (Planilha) {
+      type (Planilha)
+      min (Optional) max (One)
+    }
+    input (Despesa) {
+      type (Despesa)
+      min (Required) max (One)
+      validate{
+        if (!exists(Despesa)){
+          replan{
+            intent{
+              subplan{
+                value{$expr(Despesa)}
+                goal{ @prompt-behavior (AlwaysElicitation) Despesa }
+              } 
+            goal { Spent }
+            }
+            dialog("Please, choose a spent for add on plan")
+          }
+        }
+      }
+    }
+    input (Data) {
+      type (Data)
+      min (Optional) max (One)
+    }
+    input (Forma){
+      type (Forma)
+      min(Optional) max (One)
+    }
+    input (Valor){
+      type (Valor)
+      min(Required) max (One)
+    }
+    input (Nome) {
+      type (Nome)
+      min(Optional) max (One)
+    }
+   }
+   features{
+     form-prompt
+   }
+  output (Spent)
+}

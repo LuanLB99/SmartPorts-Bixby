@@ -1,0 +1,6 @@
+dialog (Result) {
+  match{
+    Spent(this)
+  }
+  template("Nova Despesa Adicionada com sucesso #{value(this.Despesa)}")
+}

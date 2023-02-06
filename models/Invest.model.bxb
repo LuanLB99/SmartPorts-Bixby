@@ -1,0 +1,24 @@
+structure (Invest) {
+  description (Retorno do Novo Investimento)
+   property (Ativo) {
+    type (Ativo)
+    min (Required)
+    max (One)
+  }
+  property (Quantidade) {
+    type (Quantidade)
+    min (Required)
+  }
+  property (Custo) {
+    type (Custo)
+    min (Required)
+  }
+   property (Valor) {
+    type (Valor)
+    min (Required)
+  }
+   property (Data) {
+    type (Data)
+    min (Required)
+  }
+}

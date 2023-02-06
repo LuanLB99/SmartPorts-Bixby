@@ -1,0 +1,28 @@
+structure (Spent) {
+  description (Retorno da Nova Despesa)
+   property (Planilha) {
+    type (Planilha)
+    min (Required)
+    max (One)
+  }
+  property (Despesa) {
+    type (Despesa)
+    min (Required)
+  }
+  property (Forma) {
+    type (Forma)
+    min (Required)
+  }
+  property (Data) {
+    type (Data)
+    min (Required)
+  }
+   property (Valor) {
+    type (Valor)
+    min (Required)
+  }
+   property (Nome) {
+    type (Nome)
+    min (Required)
+  }
+}

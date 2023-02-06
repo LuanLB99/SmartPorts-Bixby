@@ -1,0 +1,26 @@
+action (NovoInvestimento) {
+  type(Commit)
+  description (Postagem de Novo Investimento)
+   collect {
+    input (Ativo ) {
+      type (Ativo)
+      min (Required) max (One)
+    }
+    input (Quantidade) {
+      type (Quantidade)
+      min (Required) max (One)
+    }
+    input (Custo) {
+      type (Custo)
+      min (Required) max (One)
+    }
+    input (Valor){
+      type (Valor)
+      min(Required) max (One)
+    }
+   }
+    features{
+     form-prompt
+   }
+    output (Invest)
+}

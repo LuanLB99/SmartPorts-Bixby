@@ -1,0 +1,36 @@
+result-view {
+  match: Invest(NovoInvestimento)
+  
+  render {
+      layout{
+        section {
+          content {
+            single-line {
+            text {
+              style (Detail_M)
+              value ("Você Adicionou os seguintes Investimentos:")
+            }
+        }
+             single-line {
+            text {
+              style (Detail_M)
+              value ("Ativo: #{value(NovoInvestimento.Ativo)}")
+            }
+          }
+          single-line {
+            text {
+              style (Detail_M)
+              value ("Quantidade: #{value(NovoInvestimento.Quantidade)}")
+            }
+        }
+        single-line {
+            text {
+              style (Detail_M)
+              value ("Valor Investido: #{value(NovoInvestimento.Custo)}")
+            }
+        }
+      }
+  }
+}
+  }
+}

@@ -1,0 +1,12 @@
+capsule-info {
+  display-name (Insert new Spent)
+  developer-name (Luan Leal)
+  description ("Add new Spent capsule")
+  dispatch-name (New Spent)
+  // Set your own image for your capsule's icon
+  icon-asset (images/icons/bixby_launcher.png)
+
+  search-keywords {
+    keyword (Despesa)
+  }
+}

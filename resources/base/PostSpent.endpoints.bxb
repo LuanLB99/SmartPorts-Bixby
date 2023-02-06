@@ -1,0 +1,8 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (NovaDespesa) {
+      accepted-inputs (Planilha, Despesa, Data, Forma, Valor,Nome)
+      local-endpoint (NovaDespesa.js)
+    }
+  }
+ }

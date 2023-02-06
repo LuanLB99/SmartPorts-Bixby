@@ -1,0 +1,30 @@
+result-view {
+  match: Spent(NovaDespesa)
+  
+  render {
+      layout{
+        section {
+          content {
+            single-line {
+            text {
+              style (Detail_M)
+              value ("Você Adicionou os seguintes gastos:")
+            }
+        }
+             single-line {
+            text {
+              style (Detail_M)
+              value ("Nome da despesa: #{value(NovaDespesa.Despesa)}")
+            }
+          }
+          single-line {
+            text {
+              style (Detail_M)
+              value ("Você gastou #{value(NovaDespesa.Valor)} nessa brincadeira, Luan!!")
+            }
+        }
+      }
+  }
+}
+  }
+}

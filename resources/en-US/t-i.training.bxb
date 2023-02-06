@@ -1,0 +1,4 @@
+train (t-irbpmewt0zegp3motj6d425h5) {
+  utterance ("[g:NovaDespesa] Hi bixby, add on (Mais Novo Integrante)[v:Planilha], a (haircut)[v:Despesa], (today)[v:Data], (28)[v:Valor] dolars  on (pix)[v:Forma], at (Luan Leal)[v:Nome]")
+  last-modified (1675207934229)
+}
